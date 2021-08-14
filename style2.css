@@ -1,0 +1,250 @@
+
+:root{
+    --bg:#021370;
+    --wbg:#f9fbfe;
+    --btnbg:#3281e0;
+    --white:#ffff;
+    --text:#818ea4;
+    --lgray:#a2aebe;
+    --lline:#e8eaec;
+    --txtbox:#f8f9fe;
+    --pgray:#c2c9d7;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    font-family: 'Open Sans', sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 55%;
+    margin: auto;
+    padding: 0px 50px;
+   
+}
+/* header starts */
+.main-head{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 30px;
+}
+.lgbtn{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.lgbtn a{
+    text-decoration: none;
+    color:var(--white);
+    font-weight:bold;
+    margin-right: 10px;
+}
+.lgbtn button{
+    height: 35px;
+    width: 80px;
+    background-color: var(--btnbg);
+    outline: none;
+    border: none;
+    border-radius:2px;
+    margin:0px 10px ;
+    color: var(--white);
+    font-weight: bold;
+    font-size:12px;
+    font-family: 'Open Sans', sans-serif;;
+}
+/* header ends */
+/* section starts */
+.main-section{
+    height: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px 10px;
+}
+.main-client{
+    height: 480px;
+    width: 100%;
+    background-color: var(--wbg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius:5px;
+}
+.client{
+    height: 85%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+.client h4{
+    font-weight:600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.client span:nth-child(2) {
+    font-size: 12px;
+    color:var(--text) ;
+    margin: 0px;
+    text-align: center;
+}
+.client span:nth-child(4) {
+    font-size: 12px;
+    color:var(--text) ;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+}
+.client span:nth-child(4) a {
+    color: var(--lgray);
+}
+.client span:nth-child(4):before{
+    content:'';
+    position: absolute;
+    top: -20px;
+    right: 190px;
+    height: 2px;
+    width: 50px;
+    background-color:var(--lline);   
+    border-radius: 1px; 
+}
+.client img{
+    height: 240px;
+    width: auto;
+    padding-top: 15px;
+    
+}
+.main-login{
+    height: 580px;
+    width:320px;
+    background-color: var(--wbg);
+    position: absolute;
+    left: 40px;
+    box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.15);
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.login{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.login h3{
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.login span:nth-child(2){
+    font-size:13px;
+    color: var(--text);
+}
+.login label{
+    font-size: 12px;
+    color: var(--text);
+    margin-top: 35px !important;
+}
+.email{
+    height: 35px;
+    width: 100%;
+    background-color: var(--txtbox);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--text);
+}
+.email::placeholder{
+    color: var(--pgray);
+    padding-left: 10px;
+}
+.login button{
+    height: 40px;
+    width: 100%;
+    border:none;
+    outline: none;
+    background-color: var(--btnbg);
+    border-radius: 2px;
+    color: var(--white);
+    font-weight: 600;
+    padding:0px;
+}
+.login span:nth-child(6){
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+}
+.login span:nth-child(6):before{
+    content:'';
+    height: 1px;
+    width: 45%;
+    background-color: var(--lline);
+    position:absolute;
+    top: 50%;
+    left: 0px;
+}
+.login span:nth-child(6):after{
+    content:'';
+    height: 1px;
+    width: 45%;
+    background-color: var(--lline);
+    position:absolute;
+    top: 50%;
+    right: 0px;
+  
+}
+.login button:nth-child(5){
+    margin-top: 30px;
+}
+.login button:nth-child(7){
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.google{
+    height: 90%;
+    width: 15%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    border-radius: 2px;
+    margin-left: 2px;
+    margin-right: 35px;
+}
+.google img{
+    height: 20px;
+}
+
+/* section ends */
+
+    
